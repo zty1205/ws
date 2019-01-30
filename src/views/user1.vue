@@ -38,7 +38,7 @@ export default {
     }
   },
   mounted() {
-    let socket = io.connect("http://localhost:4000/")
+    let socket = io.connect() //io.connect("http://localhost:4000/")
 
     socket.on("receiveMsg", (data) => {
         let item={
